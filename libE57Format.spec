@@ -13,6 +13,7 @@ Source0:	https://github.com/asmaloney/libE57Format/archive/v%{version}/%{name}-%
 Source1:	https://github.com/asmaloney/libE57Format-test-data/archive/main/libE57Format-test-data.tar.gz
 # Source1-md5:	5e38e91a951c2afce5055f1f251fb5da
 Patch0:		use-packaged-gtest.patch
+Patch1:		numeric_limits.patch
 URL:		https://github.com/asmaloney/libE57Format?tab=readme-ov-file
 BuildRequires:	cmake
 %if %{with tests}
@@ -45,6 +46,7 @@ Pliki nagłówkowe biblioteki %{name}.
 %prep
 %setup -q -a1
 %patch -P0 -p1
+%patch -P1 -p1
 
 %build
 mkdir -p build

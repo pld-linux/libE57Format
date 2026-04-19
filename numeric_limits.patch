@@ -1,0 +1,10 @@
+--- libE57Format-3.3.0/src/Common.h.orig	2026-04-19 12:06:42.730004395 +0200
++++ libE57Format-3.3.0/src/Common.h	2026-04-19 12:05:53.000000000 +0200
+@@ -27,6 +27,7 @@
+ 
+ #pragma once
+ 
++#include <limits>
+ #include <set>
+ #include <string>
+ #include <vector>

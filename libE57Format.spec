@@ -20,6 +20,7 @@ BuildRequires:	gtest-devel
 BuildRequires:	libasan-devel
 BuildRequires:	libubsan-devel
 %endif
+BuildRequires:	xerces-c-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
